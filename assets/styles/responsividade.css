@@ -1,0 +1,177 @@
+/* Responsividade para telas médias (tablet) */
+@media(max-width: 1422px) {
+    .rodape__cabecalho {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1313px) {
+
+    #product-form,
+    .conteudo__principal {
+        width: 100%;
+    }
+
+    .conteudo__principal {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media(max-width: 797px) {
+    .formulario input {
+        width: 80%;
+    }
+}
+
+/* Responsividade para telas pequenas (tablets e smartphones) */
+@media (max-width: 768px) {
+
+    .cabecalho,
+    .rodape__cabecalho {
+        flex-direction: column;
+    }
+
+    .cabecalho__logo {
+        font-size: 24px;
+        gap: 5px;
+    }
+
+    .cabecalho__logo img {
+        width: 100px;
+    }
+
+    .cabecalho__barra__pesquisa,
+    .product-grid,
+    .rodape__coluna {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .pesquisar__input,
+    .cabecalho__barra__pesquisa button {
+        font-size: 16px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .product-grid .product-item {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    .formulario h3 {
+        font-size: 20px;
+    }
+
+    .botao {
+        width: 100%;
+        font-size: 18px;
+        height: 50px;
+    }
+
+    .rodape__coluna h3 {
+        font-size: 16px;
+    }
+
+    .rodape__coluna p,
+    .rodape__coluna ul {
+        font-size: 12px;
+    }
+
+    .rodape__redes-sociais i {
+        font-size: 24px;
+    }
+
+    .rodape__logo {
+        width: 100px;
+    }
+}
+
+/* Responsividade para telas muito pequenas (smartphones) */
+@media (max-width: 480px) {
+    .cabecalho__logo {
+        font-size: 20px;
+    }
+
+    .cabecalho__logo img {
+        width: 80px;
+    }
+
+    .cabecalho__barra__pesquisa {
+        margin-top: 10px;
+    }
+
+    .pesquisar__input {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .formulario {
+        margin: 30px 10px;
+        padding: 10px;
+    }
+
+    .product-grid .product-item {
+        max-width: 250px;
+        padding: 8px;
+    }
+
+    .formulario h3 {
+        font-size: 18px;
+    }
+
+    .formulario__campo {
+        width: 100%;
+        height: 45px;
+        font-size: 13px;
+        padding-left: 8px;
+    }
+
+    .botao {
+        font-size: 16px;
+        height: 45px;
+    }
+
+    .rodape__cabecalho {
+        gap: 10px;
+    }
+
+    .rodape__coluna {
+        min-width: 180px;
+        text-align: center;
+    }
+
+    .rodape__coluna h3 {
+        font-size: 14px;
+    }
+
+    .rodape__coluna p,
+    .rodape__coluna ul {
+        font-size: 12px;
+    }
+
+    .rodape__redes-sociais {
+        gap: 6px;
+    }
+
+    .rodape__final {
+        font-size: 12px;
+    }
+
+    .rodape__logo {
+        width: 90px;
+    }
+}
+
+@media (max-width: 346px) {
+    .cabecalho__logo h1 {
+        font-size: 20px;
+    }
+}

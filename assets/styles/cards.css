@@ -1,0 +1,68 @@
+.product-card {
+    width: 200px;
+    height: 300px;
+    background-color: #1B1B1B;
+    /* Fundo preto */
+    border: 2px solid #6C63FF;
+    /* Borda roxa neon */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(108, 99, 255, 0.6);
+    /* Sombra roxa neon */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    /* Efeito de zoom */
+    box-shadow: 0 6px 15px rgba(108, 99, 255, 0.8);
+    /* Sombra mais intensa ao passar o mouse */
+}
+
+.product-card img:first-child {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 224, 255, 0.4);
+    /* Sombra ciano neon */
+}
+
+.product-card h2 {
+    font-size: 16px;
+    color: #6C63FF;
+    /* Roxo neon */
+    text-align: center;
+    margin: 10px 0;
+    text-shadow: 0 0 8px #6C63FF;
+    /* Brilho neon no texto */
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #00E0FF;
+    /* Texto ciano neon */
+    margin: 5px 0;
+    text-shadow: 0 0 6px #00E0FF;
+    /* Brilho neon no texto */
+}
+
+.delete-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    filter: drop-shadow(0 0 5px #FF00FF);
+    /* Sombra rosa neon */
+}
+
+.delete-icon:hover {
+    transform: scale(1.2);
+    /* Aumenta ao passar o mouse */
+    filter: drop-shadow(0 0 10px #FF00FF);
+    /* Sombra mais intensa ao passar o mouse */
+}

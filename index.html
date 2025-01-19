@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="assets/styles/cabecalho.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/rodape.css">
+    <link rel="stylesheet" href="assets/styles/formulario.css">
+    <link rel="stylesheet" href="assets/styles/cards.css">
+    <link rel="stylesheet" href="assets/styles/responsividade.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__logo">
+            <img src="assets/imagens/cabecalho/image 1.png" alt="Logo AluraGeek">
+            <h1>Geek Games</h1>
+        </div>
+        <div class="cabecalho__barra__pesquisa">
+            <input type="search" placeholder="Digite sua pesquisa..." id="pesquisaInput" class="pesquisar__input"
+                aria-label="Pesquisar">
+            <button onclick="filtrarProdutos()" aria-label="Pesquisar">
+                <img src="assets/imagens/cabecalho/search.png" alt="ícone da lupa" class="pesquisar__lupa">
+            </button>
+        </div>
+    </header>
+    <main class="conteudo__principal">
+        <section class="conteudo">
+            <section class="principal">
+                <div class="main-container">
+                    <h2>MEUS PRODUTOS:</h2>
+                    <div class="scrollable">
+                        <div id="product-grid" class="product-grid">
+                            <div class="product-card">
+                                <img src="assets/imagens/produtos/714ZUJVbu1L._AC_UF1000,1000_QL80_.jpg"
+                                    alt="Call of Duty">
+                                <h2>Call of Duty</h2>
+                                <p>R$ 60,00</p>
+                                <img class="delete-icon" src="assets/imagens/cabecalho/lixeira.png"
+                                    onclick="deletar(event)" alt="Deletar">
+                            </div>
+
+                            <div class="product-card">
+                                <img src="assets/imagens/produtos/mortalkombat.jfif" alt="Mortal Kombat">
+                                <h2>Mortal Kombat</h2>
+                                <p>R$ 60,00</p>
+                                <img class="delete-icon" src="assets/imagens/cabecalho/lixeira.png"
+                                    onclick="deletar(event)" alt="Deletar">
+                            </div>
+                            <div class="product-card">
+                                <img src="assets/imagens/produtos/fifa-24-64b5ca0891de6.webp" alt="Fifa">
+                                <h2>Fifa 2024</h2>
+                                <p>R$ 60,00</p>
+                                <img class="delete-icon" src="assets/imagens/cabecalho/lixeira.png"
+                                    onclick="deletar(event)" alt="Deletar">
+                            </div>
+
+                            <div class="product-card">
+                                <img src="assets/imagens/produtos/NEED FOR SPEED.jpg" alt="Need For Speed">
+                                <h2>Need For Speed</h2>
+                                <p>R$ 60,00</p>
+                                <img class="delete-icon" src="assets/imagens/cabecalho/lixeira.png"
+                                    onclick="deletar(event)" alt="Deletar">
+                            </div>
+                            <div class="product-card">
+                                <img src="assets/imagens/produtos/madmax.jfif" alt="MadMax">
+                                <h2>MadMax</h2>
+                                <p>R$ 60,00</p>
+                                <img class="delete-icon" src="assets/imagens/cabecalho/lixeira.png"
+                                    onclick="deletar(event)" alt="Deletar">
+                            </div>
+
+                            <div class="product-card">
+                                <img src="assets/imagens/produtos/GEARS OF WAR.jfif" alt="Gears of War">
+                                <h2>Gears of War</h2>
+                                <p>R$ 60,00</p>
+                                <img class="delete-icon" src="assets/imagens/cabecalho/lixeira.png"
+                                    onclick="deletar(event)" alt="Deletar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <form id="product-form">
+            <section class="formulario">
+                <h3>ADICIONAR <br> PRODUTO:</h3>
+                <input id="nome" class="formulario__campo" type="text" name="nome" placeholder="Nome..." required>
+                <input id="valor" class="formulario__campo" type="text" name="valor" placeholder="Valor..." required>
+                <input id="imagem" class="formulario__campo" type="text" name="imagem" placeholder="URL da imagem..."
+                    required>
+                <div class="formulario__botoes">
+                    <button id="guardar" type="button" class="botao">Guardar</button>
+                    <button id="limpar" type="reset" class="botao">Limpar</button>
+                </div>
+            </section>
+        </form>
+    </main>
+    <footer class="rodape">
+        <div class="rodape__cabecalho">
+            <div class="rodape__coluna">
+                <h3>Sobre Nós</h3>
+                <p>Somos especializados em jogos eletrônicos. Nosso objetivo é trazer os melhores jogos para você.</p>
+            </div>
+            <div class="rodape__coluna">
+                <h3>Contato</h3>
+                <ul>
+                    <li>Email: <a href="mailto:contato@lojavirtual.com">contato@lojavirtual.com</a></li>
+                    <li>Telefone: <a href="tel:+558312345678">(83) 1234-5678</a></li>
+                </ul>
+            </div>
+            <div class="rodape__coluna">
+                <h3>Redes Sociais</h3>
+                <ul class="rodape__redes-sociais">
+                    <li><a href="https://www.facebook.com/AndinhoMaX/" aria-label="Facebook" target="_blank"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/andersonmaxx26" aria-label="Instagram" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/AndersonMaxX" aria-label="Twitter" target="_blank"><i
+                                class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rodape__final">
+            <img src="assets/imagens/cabecalho/image 1.png" alt="Logo GeekGames" class="rodape__logo">
+            <h1>GeekGames</h1>
+            <h2>Desenvolvido por Anderson Max</h2>
+        </div>
+    </footer>
+
+    <script src="assets/scripts/app.js"></script>
+</body>
+
+</html>

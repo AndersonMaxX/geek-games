@@ -1,0 +1,85 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 80px 50px;
+    background-color: #1B1B1B;
+    /* Fundo preto igual ao da main principal */
+    padding: 20px;
+    border: 2px solid #6C63FF;
+    /* Borda roxa neon */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(108, 99, 255, 0.4);
+    /* Sombra neon */
+}
+
+#product-form {
+    background-color: #1B1B1B;
+    /* Fundo preto igual ao da main principal */
+    padding: 20px;
+}
+
+
+.formulario h3 {
+    font-family: "Press Start 2P", serif;
+    text-align: center;
+    font-size: 24px;
+    color: #6C63FF;
+    /* Roxo neon */
+    text-shadow: 0 0 10px #6C63FF;
+    /* Brilho neon */
+}
+
+.formulario__campo {
+    width: 592px;
+    height: 58px;
+    border-radius: 35px;
+    padding-left: 15px;
+    font-size: 15px;
+    background-color: #1B1B1B;
+    /* Fundo preto */
+    color: #FFFFFF;
+    /* Texto branco */
+    border: 2px solid #00E0FF;
+    /* Borda ciano neon */
+    box-shadow: 0px 4px 8px rgba(0, 224, 255, 0.4);
+    /* Sombra neon */
+}
+
+.formulario__campo::placeholder {
+    color: #CCCCCC;
+    /* Cinza claro para texto placeholder */
+}
+
+.formulario__botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.botao {
+    width: 188px;
+    height: 55px;
+    background-color: #00E0FF;
+    /* Fundo ciano neon */
+    color: #1B1B1B;
+    /* Texto preto para contraste */
+    border: 2px solid #6C63FF;
+    /* Borda roxa neon */
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Press Start 2P", serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 224, 255, 0.4);
+    /* Sombra neon */
+}
+
+.botao:hover {
+    background-color: #FF00FF;
+    /* Fundo rosa neon ao passar o mouse */
+    box-shadow: 0px 6px 12px rgba(255, 0, 255, 0.4);
+    /* Sombra rosa neon ao passar o mouse */
+    transform: scale(1.05);
+    /* Efeito de zoom */
+}
